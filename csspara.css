@@ -1,0 +1,86 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective-origin: bottom right;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform-origin: bottom right;
+}
+
+.parallax__layer--0 {
+  transform: translateZ(0px) scale(1) translateX(-3px);
+  z-index: 10;
+}
+
+.parallax__layer--1 {
+  transform: translateZ(-1px) scale(2) translateX(-6px);
+  z-index: 9;
+}
+
+.parallax__layer--2 {
+  transform: translateZ(-2px) scale(3) translateX(-9px);
+  z-index: 8;
+}
+
+.parallax__layer--3 {
+  transform: translateZ(-3px) scale(4) translateX(-14px);
+  z-index: 7;
+}
+
+.parallax__layer--4 {
+  transform: translateZ(-4px) scale(5) translateX(-15px);
+  z-index: 6;
+}
+
+.parallax__layer--5 {
+  transform: translateZ(-5px) scale(6) translateX(-16px);
+  z-index: 5;
+}
+
+.parallax__group {
+  position: relative;
+  height: 100vh;
+  transform-style: preserve-3d;
+}
+
+.parallax-debug .parallax__layer--0 {
+  border: 1px dashed green;
+}
+.parallax-debug #group-0 {
+  z-index: 20;
+}
+.parallax-debug #group-0 .parallax__layer--1,
+.parallax-debug #group-0 .parallax__layer--2,
+.parallax-debug #group-0 .parallax__layer--3,
+.parallax-debug #group-0 .parallax__layer--4,
+.parallax-debug #group-0 .parallax__layer--5,
+.parallax-debug #group-0 .parallax__layer--6 {
+  background-color: #89b0dcb0;
+}
+.parallax-debug #group-1 {
+  z-index: 10;
+}
+.parallax-debug #group-1 .parallax__layer--3 {
+  background-color: #e6a37fe8;
+}
+

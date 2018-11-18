@@ -1,25 +1,42 @@
 <!DOCTYPE HTML>
 <html>
   <head>
-  	<title>alloy21 - Parallax CSS</title>
-    <link rel="stylesheet" href="style.css" />
+  	<title>dev-alloy - Parallax CSS</title>
+    <link rel="stylesheet" href="csspara.css" />
   </head>
   <body>
 
 
-<main class="wrapper">
-  <section class="section parallax bg1">
-    <div style="float: left; width: 200px; height: 40px; background-color: #333;">Box over img</div>
-  	<h2>GO FAST. SWEAT EVERY DETAIL. LOOK RIDICULOUSLY GOOD</h2>
-    <h1>Design First</hi>
-  </section>
-  <section class="section static">
-    <h1>Boring</h1>
-  </section>
-  <section class="section parallax bg2">
-    <h1>SO FWUFFY AWWW</hi>
-  </section>
-</main>
+<div class="parallax parallax-debug">
+  <div class="parallax__group" id="group-0">
+    <div class="parallax__layer parallax__layer--5">
+      <div class="centered">Background 5</div>
+    </div>
+    <div class="parallax__layer parallax__layer--4">
+      <div class="centered">Background 4</div>
+    </div>
+    <div class="parallax__layer parallax__layer--3">
+      <div class="centered">Background 3</div>
+    </div>
+    <div class="parallax__layer parallax__layer--2">
+      <div class="centered">Background 2</div>
+    </div>
+    <div class="parallax__layer parallax__layer--1">
+      <div class="centered">Background 1</div>
+    </div>
+    <div class="parallax__layer parallax__layer--0">
+      <div class="centered">Foreground 1</div>
+    </div>
+  </div>
+  <div class="parallax__group" id="group-1">
+    <div class="parallax__layer parallax__layer--3">
+      <div class="centered">Background 2</div>
+    </div>
+    <div class="parallax__layer parallax__layer--0">
+      <div class="centered">Foreground 2</div>
+    </div>
+  </div>
+</div>
 
 
   </body>
