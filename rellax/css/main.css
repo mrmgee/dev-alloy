@@ -10,9 +10,7 @@ h4 {
   font-size: 22px;
   margin-bottom: 28px;
 }
-p {
-  font-size: 22px;
-}
+
 a,
 a:hover,
 a:active,
@@ -124,7 +122,7 @@ main,
   position: relative;
 }
 section.san-francisco {
-  margin-top: 100px;
+/*  margin-top: 100px;*/
 }
 
 
@@ -132,17 +130,18 @@ section.san-francisco {
   position: absolute;
   width: 100%;
   height: auto;
-  margin-top: 100px;
+/*  margin-top: 100px;*/
 }
 .absolute.above {
   z-index: 2;
 }
 .absolute h2 {
-  font-size: 140px;
-  font-weight: 900;
+  font-size: 1em;
+  font-weight: 700;
   letter-spacing: -0.04em;
   color: #F0F0F0;
   z-index: -1;
+  text-transform: uppercase;
 }
 
 
@@ -406,10 +405,13 @@ span.white {
 
 @media (max-width: 767px) {
 
-  header h1 {
+  h1, header h1 {
     font-size: 3em;
   }
-  header h2 {
+  .absolute h1 {
+    font-size: 2em;
+  }
+  h2, header h2 {
   font-size: 0.8em;
   margin-top: 10px;
 }
