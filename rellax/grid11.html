@@ -1,0 +1,74 @@
+<!doctype html>
+<title>Grid11 - alloy</title>
+<style>
+#grid {
+  display: grid;
+/*
+  grid-template-rows: 3fr 2fr 2fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+*/
+/*  grid-template-rows: repeat(11, 1fr);*/
+  grid-template-rows: 50vh repeat(2, 25vh) repeat(4, auto);
+  grid-template-columns: repeat(6, 1fr);
+
+  grid-gap: 10px;
+  height: 100vh;
+  margin: 0;
+}
+#grid > div {
+  color: white;
+/*  font-size: 4vw;*/
+  padding: 10px;
+  background: gold;
+}
+#hero1  {
+   grid-column: span 6;
+}
+#row2, #row3  {
+   grid-column: span 3;
+}
+
+
+#grid > #hero1 {
+  background:url(../images/vader_rear01.jpg) no-repeat top center fixed;
+  background-size: cover;
+  -webkit-background-size:cover;
+  min-height: 100%;
+  overflow: hidden;
+  border: 1px solid red;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+#grid > div > img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+}
+</style>
+<body id="grid">
+  <div id="hero1">r1-c6
+  </div><!-- END row1 -->
+
+
+
+  <div id="row2">r2-c3 2
+    <h1>Design First. Design <em>Fast</em></h1>
+    <p>GO FAST. SWEAT EVERY DETAIL. LOOK RIDICULOUSLY GOOD.</p>
+  </div><!-- END row2 -->
+
+  <div id="row3">r2-c3 3
+    <img src="images/gt40_headlights.jpg">
+  </div><!-- END row3 -->
+
+  <div id="row4">r3-c1 4</div><!-- END row4 -->
+  <div id="row5">r3-c2 5</div><!-- END row5 -->
+  <div id="row6">r3-c3 6</div><!-- END row6 -->
+  <div id="row7">r3-c4 7</div><!-- END row7 -->
+  <div id="row8">r3-c5 8</div><!-- END row8 -->
+  <div id="row9">r3-c6 9</div><!-- END row9 -->
+
+
+</body>

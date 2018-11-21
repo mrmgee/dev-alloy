@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Rellax - alloy</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Booooooootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
+    <![endif]-->
+    <style type="text/css">
+    .spacevert {
+    	height: 600px;
+/*    	background-color: #ccc;*/
+    	border: 1px #000 solid;
+    }
+    .projects .row div {
+      border: 1px #000 solid;
+    }
+    	
+
+
+    </style>
+    }
+  </head>
+  <body>
+
+  	<header>
+
+      <div class="container-fluid">
+        <div class="row" style="position: absolute;">
+          <div class="col-12 px-0">
+            <img class="img-fluid" src="images/vader_rear01.jpg">
+          </div>
+        </div>  
+      </div>
+
+  		<div class="row">
+  			<div class="col-12">
+  				<h2>GO FAST. SWEAT EVERY DETAIL. LOOK RIDICULOUSLY GOOD.</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-11 offset-md-1">
+            	<h1>Design First. Design <em>Fast</em></h1>
+            </div>
+        </div>
+    </header>
+
+
+
+
+  	<section>
+  		<div class="row">
+  			<div class="col-md-4 spacevert"> 1 col-4
+  				<div style="position:relative;">
+	  				div position:relative
+	  				<h3 style="position:absolute; left:0; bottom:5px; padding:0 0 2px 2px; background-color:#000; color:#fff;">69 Cuda Super</h3>
+	  				<img class="img-fluid" src="images/69-cuda-5.jpg">
+  				</div>
+  				<img class="img-fluid" src="images/dart-swingerr-5.jpg">
+  				<div class="rellax" data-rellax-speed="7" style="position:absolute; top:20px;"><img class="img-fluid" src="images/69-cuda-6.jpg"></div>
+
+  			</div>
+  			<div class="col-md-4 spacevert"> 2xx col-4</div>
+  			<div class="col-md-4 spacevert"> 3xx col-4</div>
+  		</div>
+  	</section>
+
+    <section class="projects">
+      <div class="row">
+        <div class="col-2">proj col-2</div>
+        <div class="col-8">proj col-8</div>
+        <div class="col-2">proj col-2</div>
+      </div>
+
+
+    </section>
+
+
+        <div class="row" style="position: absolute;">
+          <div class="col-12 px-0">
+            <img class="img-fluid" src="images/chevelle_kellie_burnout.jpg">
+          </div>
+        </div>
+
+
+  	<section>
+  		<div class="row">
+  			<div class="col-4 offset-2">
+  				<div class="rellax">
+  					<img class="img-fluid" src="images/dart-swingerr-5.jpg">
+  				</div>
+  			</div>
+            <div class="col-4 offset-1"><img class="img-fluid" src="images/69-cuda-6.jpg"></div>
+  		</div>
+  	</section>
+
+
+  	<section>
+  		<div class="row">
+  			<div class="col-4 spacevert"> 2 col-4</div>
+  			<div class="col-4 spacevert"> 3 col-4</div>
+  		</div>
+  	</section>
+
+
+
+
+
+
+    <!-- javascript -->
+    <script type="text/javascript" src="rellax.js"></script>
+    <script>
+    	var rellax = new Rellax('.rellax', {
+        // center: true
+        callback: function(position) {
+            // callback every position change
+            console.log(position);
+        }
+      });
+    </script>
+
+
+  </body>
+</html>

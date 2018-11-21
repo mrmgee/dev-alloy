@@ -1,0 +1,59 @@
+<!doctype html>
+<title>Grid Nested - alloy</title>
+<style>
+* { box-sizing: border-box; }
+
+body {
+  margin: 40px;
+  background-color: #fff;
+  color: #444;
+  font: 1.4em Sansita, sans-serif;
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.grid .nested {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.nested > * {
+  border: 5px solid rgb(244,234,213);
+  padding: 20px;
+  border-radius: 18px;
+  background-color: rgb(198,229,217);
+  color: #000;
+}
+
+.grid > * {
+padding: 10px;
+  border: 5px solid rgba(214,129,137,.5);
+  border-radius: 5px;
+  background-color: rgba(233,78,119,.5);
+  color: #fff; 
+}
+
+
+
+
+</style>
+<body>
+
+<div class="grid">
+  <div class="nested">
+    <div>a</div>
+    <div>b</div>
+    <div style="grid-column: 2 / 2;">c</div>
+  </div>
+  <div>2.</div>
+  <div>3.</div>
+</div>
+
+
+</body>
