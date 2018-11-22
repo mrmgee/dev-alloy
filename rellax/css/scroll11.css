@@ -46,10 +46,11 @@ header a{
 
 
 
-#hero2{background: url(../images/chevelle_kellie_burnout.jpg);
+#hero2 {background: url(../images/chevelle_kellie_burnout.jpg);
   background-size:cover;
   background-position:center center;
-  background-attachment:fixed;
+/*  background-attachment:fixed;*/
+background-attachment:static;
 }
 
 .hero {
