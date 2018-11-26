@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ScrollBg 11 - alloy</title>
+    <style media="screen">
+      body {
+        margin: 0;
+      }
+
+      header {
+        margin: 0;
+        width: 100vw;
+        height: 40vw;
+        background: url('images/vader_rear01.jpg') repeat-y;
+        background-size: cover;
+      }
+
+      main {
+        height: 60vw;
+      }
+
+      section {
+        margin: 0;
+        width: 100vw;
+        height: 300px;
+        background: url('images/chevelle_kellie_burnout.jpg') repeat-y;
+        background-size: cover;
+      }
+
+      footer {
+        margin: 0;
+        width: 100vw;
+        height: 500px;
+        background: url('images/gt40_headlights.jpg') no-repeat;
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="parallax-panel" data-speed="10">
+      <h1>Design First. Design <em>Fast</em></h1>
+      <p>GO FAST. SWEAT EVERY DETAIL. LOOK RIDICULOUSLY GOOD.</p>
+    </header>
+
+    <main>
+      <h3>Our Story</h3>
+      <h1>Built by Hand. In West Oakland.</h1>
+      <p>Hand-built metalwork and fabrication bring our visions to life. But it starts with a spark — the creative vision drawing from the past and slamming it into the future.</p>
+    </main>
+
+    <section class="parallax-panel" data-speed="8">
+      <h1>Our Projects</h1>
+      <p>Hand-built metalwork and fabrication.</p>
+    </section>
+
+    <footer class="parallax-panel" data-speed="2"></footer>
+
+  <script type="text/javascript" src="js/bg-parallax.min.js"></script></body>
+  <script>
+  function init () {
+    window.bgParallax('.parallax-panel')
+  }
+
+  onload = init
+  </script>
+</html>

@@ -46,10 +46,13 @@ header a{
 
 
 
-#hero2 {background: url(../images/chevelle_kellie_burnout.jpg);
-  background-size:cover;
-  background-position:center center;
-  background-attachment:fixed;
+#hero2 {
+  background: url(../images/chevelle_kellie_burnout.jpg) no-repeat center center fixed;
+  background-size: cover;
+  -webkit-background-size:cover;
+  min-height: 100%;
+  overflow: hidden;
+  border: 1px solid red;
 }
 
 .hero {
@@ -111,9 +114,12 @@ p{
 ------------------------------------*/
 
 @media (max-width: 767px) {
-  #hero1 {
+  #hero1, #hero2 {
     background-size: contain;
     -webkit-background-size:contain;
+  }
+  #hero2 {
+    background-position: 0 150px;
   }
   .inner {
     min-height:34vh;
