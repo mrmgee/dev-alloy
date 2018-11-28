@@ -447,6 +447,12 @@ html, body{
   background-size: cover;
 }
 
+.iosfixed {
+  transform: translate3d(0,0,0);
+}
+
+
+
 
 #hero1 {
   top: 0;
