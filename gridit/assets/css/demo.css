@@ -1,0 +1,100 @@
+body {
+  font-family: 'montserrat';
+}
+
+h1 {
+  font-family: 'Anton';
+}
+
+h6 {
+  font-weight: bold;
+}
+
+img {
+  border-radius: 0.2rem;
+  max-width: 100%;
+}
+
+.demo-wrapper {
+  color: rgb(35, 37, 41);
+  padding-top: 2.5rem;
+}
+
+.inner-block {
+  display: block;
+  margin-bottom: 1.25em;
+}
+
+a.inner-block {
+  font-weight: normal;
+  text-decoration: none;
+  color: #666666;
+}
+
+.demo-wrapper .block {
+  margin-bottom: 3.5rem;
+}
+
+.extra-pad {
+  padding: 0 30px;
+}
+
+.hover-item {
+  -o-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+  -webkit-transition: 0.25s ease-out;
+}
+
+.hover-item:hover {
+  -o-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+  -webkit-transition: 0.25s ease-out;
+  -webkit-box-shadow: 0px 5px 10px rgb(230, 230, 230);
+  box-shadow: 0px 5px 10px rgb(230, 230, 230);
+}
+
+.hover-item:hover {
+  -o-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+  -webkit-transition: 0.25s ease-out;
+  -ms-transform: translateY(-10px);
+  transform: translateY(-10px);
+  -webkit-transform: translateY(-10px);
+}
+
+.demo-title {
+  padding: 6em 0;
+}
+
+.btn-fill:hover {
+  color: #fff;
+  -webkit-transform: translateY(-3px);
+  -ms-transform: translateY(-3px);
+  transform: translateY(-3px);
+}
+
+.btn-fill {
+  color: #fff;
+  background-color: #313437;
+  border: 0;
+  outline: none;
+  padding: 1.2em 3em;
+  -webkit-transition: 0.25s ease-out;
+  -o-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+}
+
+.line {
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+.description {
+  margin-bottom: 2.5rem;
+}
+
+.copyright p {
+  text-align: center;
+  color: rgb(224, 224, 224);
+  margin-bottom: 2rem;
+}
